@@ -27,7 +27,7 @@ namespace MazeBot.Data
 
         public string Show()
         {
-            var r = maze.Select(i => i.Select(j => j == '1' ? '□' : j == '0' ? ' ' : j).ToArray()).ToArray();
+            var r = maze.Select(i => i.Select(j => j == '1' ? '#' : j == '0' ? ' ' : j).ToArray()).ToArray();
 
             string result = "";
             for (int i = 0; i < r.Length; i++)
@@ -82,7 +82,7 @@ namespace MazeBot.Data
             maze[path[0].Y][path[0].X] = 'S';
             for (int i = 1; i < path.Count - 1; i++)
             {
-                maze[path[i].Y][path[i].X] = '○';
+                maze[path[i].Y][path[i].X] = 'X';
             }
             maze[path[path.Count - 1].Y][path[path.Count - 1].X] = 'E';
         }
