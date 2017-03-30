@@ -46,6 +46,13 @@ namespace MazeBotTests
         }
 
         [TestMethod]
+        public void TestJaggedMaze()
+        {
+            string[] input = FileIO.ReadLines("../../Tests/jaggedMaze.txt");
+            FileIO.WriteToFile("../../Tests/jaggedMaze.out", BotRunner.FindResult(input));
+        }
+
+        [TestMethod]
         public void MazeTest1()
         {
             string[] input = FileIO.ReadLines("../../Tests/input.txt");
