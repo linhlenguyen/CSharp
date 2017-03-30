@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MazeBot.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,16 +28,12 @@ namespace MazeBot.Data
 
         public string Show()
         {
-            var r = maze.Select(i => i.Select(j => j == '1' ? '#' : j == '0' ? ' ' : j).ToArray()).ToArray();
+            var r = maze.Select(i => i.Select(j => j == '1' ? '#' : j == '0' ? ' ' : j));
 
             string result = "";
-            for (int i = 0; i < r.Length; i++)
+            foreach (IEnumerable<char> lc in r)
             {
-                for (int j = 0; j < r[i].Length; j++)
-                {
-                    result += r[i][j];
-                }
-                result += '\n';
+                result += lc.Show() + '\n';
             }
             return result;
         }
