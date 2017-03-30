@@ -14,9 +14,10 @@ Summary of the algorithm
 * 6 Repeat step 2 until there's no item in the queue or the end point is found
 
 ## Tests
-|Test case|Time taken|Result|
-|---|---|---|
-|Small| <1 ms|[small](https://github.com/linhlenguyen/CSharp/blob/master/MazeBot/MazeBotTests/Tests/small.out)
-|Medium| 1 ms|[medium](https://github.com/linhlenguyen/CSharp/blob/master/MazeBot/MazeBotTests/Tests/medium_input.out)
-|Large|600-800ms|[large](https://github.com/linhlenguyen/CSharp/blob/master/MazeBot/MazeBotTests/Tests/large_input.out)
-|Sparse medium| 4 ms|[sparse medium](https://github.com/linhlenguyen/CSharp/blob/master/MazeBot/MazeBotTests/Tests/sparse_medium.out)
+|Test case|Time taken|Input|Output|
+|---|---|---|---|
+|Small| <1 ms|[in](https://github.com/linhlenguyen/CSharp/blob/master/MazeBot/MazeBotTests/Tests/small.txt)|[out](https://github.com/linhlenguyen/CSharp/blob/master/MazeBot/MazeBotTests/Tests/small.out)
+|Medium| 1 ms|[in](https://github.com/linhlenguyen/CSharp/blob/master/MazeBot/MazeBotTests/Tests/medium_input.txt)|[out](https://github.com/linhlenguyen/CSharp/blob/master/MazeBot/MazeBotTests/Tests/medium_input.out)
+|Large|600-800ms|[in](https://github.com/linhlenguyen/CSharp/blob/master/MazeBot/MazeBotTests/Tests/large_input.txt)|[out](https://github.com/linhlenguyen/CSharp/blob/master/MazeBot/MazeBotTests/Tests/large_input.out)
+|Sparse medium| 4 ms|[in](https://github.com/linhlenguyen/CSharp/blob/master/MazeBot/MazeBotTests/Tests/sparse_medium.txt)|[out](https://github.com/linhlenguyen/CSharp/blob/master/MazeBot/MazeBotTests/Tests/sparse_medium.out)
+|Jagged|<1ms|[in](https://github.com/linhlenguyen/CSharp/blob/master/MazeBot/MazeBotTests/Tests/jaggedMaze.txt)|[out](https://github.com/linhlenguyen/CSharp/blob/master/MazeBot/MazeBotTests/Tests/jaggedMaze.out)
